@@ -114,7 +114,7 @@ Material:
     - _Caustics_Distortion_Factor: 3
     - _Caustics_Distortion_Scale: 10
     - _Caustics_Distortion_Speed: 0
-    - _Caustics_Speed: 0.0641
+    - _Caustics_Speed: 0.0183
     - _Caustics_Texture_Rotation: 90
     - _Caustics_Tile: 0.445
     - _ClearCoatMask: 0
