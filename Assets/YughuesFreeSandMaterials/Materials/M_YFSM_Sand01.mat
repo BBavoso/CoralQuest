@@ -10,7 +10,7 @@ Material:
   m_Name: M_YFSM_Sand01
   m_Shader: {fileID: -6465566751694194690, guid: 0ba09e3043034d64eba4c886a0dc5959, type: 3}
   m_Parent: {fileID: 2100000, guid: 2e7fa2e78657b1e429472827526c75ea, type: 2}
-  m_ModifiedSerializedProperties: 2
+  m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords:
   - _METALLICSPECGLOSSMAP
@@ -28,18 +28,8 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Ints: []
-    m_Floats:
-    - _Cull: 2
-    - _Cutoff: 0.5
-    - _Displacement_Amount: 0.2
-    - _DstBlend: 0
-    - _SrcBlend: 1
-    - _Surface: 0
-    - _Transparency: 0.95
-    - _WorkflowMode: 0
-    m_Colors:
-    - _Color: {r: 0.65, g: 0.59554964, b: 0.4866491, a: 1}
-    - _EdgeColor: {r: 0.25098038, g: 0.32941175, b: 0.28627446, a: 1}
+    m_Floats: []
+    m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &3454861612121955129
