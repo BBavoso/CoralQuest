@@ -1,36 +1,50 @@
 using UnityEngine;
 
-public class CausticAnimator : MonoBehaviour
+[RequireComponent(typeof(Light))]
+public class CausticsLightAnimatorResources : MonoBehaviour
 {
-    public Light targetLight;
-    public string causticFolder = "Assets/Resources/Caustics/caustic_"; // path inside Resources
-    public int totalFrames = 50;
-    public float frameRate = 20f; // frames per second
+    [Header("Flipbook Settings")]
+    public string resourceFolder = "Caustics"; // Folder inside Assets/Resources/
+    public float fps = 2f;                     // Frames per second
 
-    private Texture[] caustics;
-    private int currentFrame = 0;
-    private float timer = 0f;
+    private Light lightSource;
+    private Texture[] causticFrames;
+    private float elapsedTime = 0f;
+    private int lastFrameIndex = -1;
 
     void Start()
     {
-        // Load all textures dynamically
-        caustics = new Texture[totalFrames];
-        for (int i = 1; i <= totalFrames; i++)
+        lightSource = GetComponent<Light>();
+
+        // Load all textures from Resources/{resourceFolder}
+        causticFrames = Resources.LoadAll<Texture>(resourceFolder);
+
+        if (causticFrames.Length == 0)
         {
-            caustics[i - 1] = Resources.Load<Texture>(causticFolder + i);
+            Debug.LogError($"No textures found in Resources/{resourceFolder}!");
+            return;
         }
+
+        // Assign first frame
+        lightSource.cookie = causticFrames[0];
+        lastFrameIndex = 0;
     }
 
     void Update()
     {
-        if (caustics.Length == 0) return;
+        if (causticFrames.Length == 0) return;
 
-        timer += Time.deltaTime;
-        if (timer >= 1f / frameRate)
+        // Update elapsed time
+        elapsedTime += Time.deltaTime;
+
+        // Calculate the current frame
+        int currentFrameIndex = (int)(elapsedTime * fps) % causticFrames.Length;
+
+        // Only update if the frame changed
+        if (currentFrameIndex != lastFrameIndex)
         {
-            timer = 0f;
-            currentFrame = (currentFrame + 1) % totalFrames;
-            targetLight.cookie = caustics[currentFrame];
+            lightSource.cookie = causticFrames[currentFrameIndex];
+            lastFrameIndex = currentFrameIndex;
         }
     }
 }
