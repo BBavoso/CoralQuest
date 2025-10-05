@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{300cba5b-07b8-42c0-ae37-5c3722a8aa26}">
+		<property name="assetPath">
+			<value>Low Ambience.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>29.999979166666666</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d6754fb3-cafe-4e64-880f-cea06191b8fc}</destination>
+		</relationship>
+	</object>
+</objects>
