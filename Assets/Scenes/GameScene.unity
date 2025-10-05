@@ -26963,11 +26963,13 @@ Transform:
   m_PrefabInstance: {fileID: 719831362}
   m_PrefabAsset: {fileID: 0}
 --- !u!43 &729976959
+--- !u!43 &729976959
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_Name: PolybrushMesh50708
   m_Name: PolybrushMesh50708
   serializedVersion: 12
   m_SubMeshes:
@@ -27440,6 +27442,68 @@ MonoBehaviour:
   m_ObjectUpAxis: 1
   m_StartOffset: 0.125
 >>>>>>> parent of 3a3576c (Revert "Merge branch 'main' of https://github.com/BBavoso/CoralQuest")
+--- !u!1001 &754733599
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1281225379}
+    m_Modifications:
+    - target: {fileID: 100082, guid: 724aa48ce1442db4a906b3b6d9781d7c, type: 3}
+      propertyPath: m_Name
+      value: Anim_Coral_07c(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400082, guid: 724aa48ce1442db4a906b3b6d9781d7c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.123315
+      objectReference: {fileID: 0}
+    - target: {fileID: 400082, guid: 724aa48ce1442db4a906b3b6d9781d7c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.031482756
+      objectReference: {fileID: 0}
+    - target: {fileID: 400082, guid: 724aa48ce1442db4a906b3b6d9781d7c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.9547625
+      objectReference: {fileID: 0}
+    - target: {fileID: 400082, guid: 724aa48ce1442db4a906b3b6d9781d7c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400082, guid: 724aa48ce1442db4a906b3b6d9781d7c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400082, guid: 724aa48ce1442db4a906b3b6d9781d7c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400082, guid: 724aa48ce1442db4a906b3b6d9781d7c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400082, guid: 724aa48ce1442db4a906b3b6d9781d7c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400082, guid: 724aa48ce1442db4a906b3b6d9781d7c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400082, guid: 724aa48ce1442db4a906b3b6d9781d7c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 724aa48ce1442db4a906b3b6d9781d7c, type: 3}
+--- !u!4 &754733600 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400082, guid: 724aa48ce1442db4a906b3b6d9781d7c, type: 3}
+  m_PrefabInstance: {fileID: 754733599}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &806028684
 PrefabInstance:
   m_ObjectHideFlags: 0
