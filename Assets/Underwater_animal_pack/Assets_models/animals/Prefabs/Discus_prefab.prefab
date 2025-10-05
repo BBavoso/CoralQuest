@@ -155,8 +155,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.049999997, y: 0.049999997, z: 0.049999997}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4246150174857866}
   - {fileID: 4115171880014744}
@@ -174,9 +174,9 @@ Animation:
   m_GameObject: {fileID: 1092707637671508}
   m_Enabled: 1
   serializedVersion: 4
-  m_Animation: {fileID: -5252816984213320552, guid: 4176be712e89a6f48b622d64ea21b8a7, type: 3}
+  m_Animation: {fileID: 7400000, guid: 4176be712e89a6f48b622d64ea21b8a7, type: 3}
   m_Animations:
-  - {fileID: -5252816984213320552, guid: 4176be712e89a6f48b622d64ea21b8a7, type: 3}
+  - {fileID: 7400000, guid: 4176be712e89a6f48b622d64ea21b8a7, type: 3}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
