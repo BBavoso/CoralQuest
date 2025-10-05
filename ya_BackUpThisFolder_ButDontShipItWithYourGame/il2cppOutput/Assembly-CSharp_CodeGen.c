@@ -34,6 +34,15 @@ extern void AnimatedProjector__ctor_m0E049D6F7E372B4E6354996C30B2BE6AAD5503FF (v
 extern void SurroundClouds_Start_m90F3569C1D98216789E36EE18DFACAD8F28F5ED2 (void);
 extern void SurroundClouds_Update_m93F283B8D1F59EF3E6545F6E31F8BBEED8A81CC7 (void);
 extern void SurroundClouds__ctor_mC158219B4AD620C9CB7840206D489EDB043BE5D0 (void);
+extern void BubbleController_Start_m62A1E64A66CCD9EA36B42473B6DEAB71C05EB3C2 (void);
+extern void BubbleController_PlayParticlesRandomly_m0B9141FC7858A5D36C89B38CE7E343066D3D4105 (void);
+extern void BubbleController__ctor_m9E2EA012DFADF80E2CF7779C73C9A52B295A2502 (void);
+extern void U3CPlayParticlesRandomlyU3Ed__5__ctor_m1F62E82EEFBE37369431BFD862D8C85F1581DDA5 (void);
+extern void U3CPlayParticlesRandomlyU3Ed__5_System_IDisposable_Dispose_mC86E1903EC78954C68F13CA2413E59C69A22107C (void);
+extern void U3CPlayParticlesRandomlyU3Ed__5_MoveNext_m5857714824EB032C29B603E4DC0D117BE7C38FEC (void);
+extern void U3CPlayParticlesRandomlyU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m84BCB4D7BB52A0A224BF5E01008F2070A4779595 (void);
+extern void U3CPlayParticlesRandomlyU3Ed__5_System_Collections_IEnumerator_Reset_m94035691098F69663B63C7B5D41F5A609BDEB096 (void);
+extern void U3CPlayParticlesRandomlyU3Ed__5_System_Collections_IEnumerator_get_Current_m0AEDFCB875CB118AE2C7F99472DC90BCF5EAC3E4 (void);
 extern void CausticsLightAnimatorResources_Start_m946B0E99B2AD8342D296C585AC6A46A45DC3122A (void);
 extern void CausticsLightAnimatorResources_Update_m426724716B5C3F1982899854BF6B380878FDF5A9 (void);
 extern void CausticsLightAnimatorResources__ctor_m2761BCD3A10DF717F2ADAE2AEA6D59C57BF3F70F (void);
@@ -44,7 +53,7 @@ extern void Water_Settings__ctor_mB62CAD71CAF3D153627B41D6F1FADAD710CAD691 (void
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
 extern void PrefabPainterSceneSettings__ctor_m4B74469B752358D48AECE9BA906FA0ED2E5DF7CE (void);
-static Il2CppMethodPointer s_methodPointers[37] = 
+static Il2CppMethodPointer s_methodPointers[46] = 
 {
 	RotateGameObject_Start_m99C38F8FF408EA5DC5227D78964106594FD25957,
 	RotateGameObject_FixedUpdate_m3A2ECB33A93F1EAE8B3B59BF8D4C378F54D06BA8,
@@ -73,6 +82,15 @@ static Il2CppMethodPointer s_methodPointers[37] =
 	SurroundClouds_Start_m90F3569C1D98216789E36EE18DFACAD8F28F5ED2,
 	SurroundClouds_Update_m93F283B8D1F59EF3E6545F6E31F8BBEED8A81CC7,
 	SurroundClouds__ctor_mC158219B4AD620C9CB7840206D489EDB043BE5D0,
+	BubbleController_Start_m62A1E64A66CCD9EA36B42473B6DEAB71C05EB3C2,
+	BubbleController_PlayParticlesRandomly_m0B9141FC7858A5D36C89B38CE7E343066D3D4105,
+	BubbleController__ctor_m9E2EA012DFADF80E2CF7779C73C9A52B295A2502,
+	U3CPlayParticlesRandomlyU3Ed__5__ctor_m1F62E82EEFBE37369431BFD862D8C85F1581DDA5,
+	U3CPlayParticlesRandomlyU3Ed__5_System_IDisposable_Dispose_mC86E1903EC78954C68F13CA2413E59C69A22107C,
+	U3CPlayParticlesRandomlyU3Ed__5_MoveNext_m5857714824EB032C29B603E4DC0D117BE7C38FEC,
+	U3CPlayParticlesRandomlyU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m84BCB4D7BB52A0A224BF5E01008F2070A4779595,
+	U3CPlayParticlesRandomlyU3Ed__5_System_Collections_IEnumerator_Reset_m94035691098F69663B63C7B5D41F5A609BDEB096,
+	U3CPlayParticlesRandomlyU3Ed__5_System_Collections_IEnumerator_get_Current_m0AEDFCB875CB118AE2C7F99472DC90BCF5EAC3E4,
 	CausticsLightAnimatorResources_Start_m946B0E99B2AD8342D296C585AC6A46A45DC3122A,
 	CausticsLightAnimatorResources_Update_m426724716B5C3F1982899854BF6B380878FDF5A9,
 	CausticsLightAnimatorResources__ctor_m2761BCD3A10DF717F2ADAE2AEA6D59C57BF3F70F,
@@ -84,7 +102,7 @@ static Il2CppMethodPointer s_methodPointers[37] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 	PrefabPainterSceneSettings__ctor_m4B74469B752358D48AECE9BA906FA0ED2E5DF7CE,
 };
-static const int32_t s_InvokerIndices[37] = 
+static const int32_t s_InvokerIndices[46] = 
 {
 	13754,
 	13754,
@@ -114,6 +132,15 @@ static const int32_t s_InvokerIndices[37] =
 	13754,
 	13754,
 	13754,
+	13563,
+	13754,
+	10437,
+	13754,
+	13378,
+	13563,
+	13754,
+	13563,
+	13754,
 	13754,
 	13754,
 	13754,
@@ -128,7 +155,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	37,
+	46,
 	s_methodPointers,
 	0,
 	NULL,
