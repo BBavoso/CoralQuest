@@ -692,6 +692,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4352906953820976}
   - component: {fileID: 111132293950802026}
+  - component: {fileID: -6406204757365159953}
   m_Layer: 0
   m_Name: Purplefish_prefab
   m_TagString: Untagged
@@ -709,13 +710,14 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4396454829330544}
   - {fileID: 4105917632345644}
   - {fileID: 4270738118379214}
   - {fileID: 4637238043439922}
+  - {fileID: 6782864372221469295}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!111 &111132293950802026
@@ -727,12 +729,100 @@ Animation:
   m_GameObject: {fileID: 1970183940235022}
   m_Enabled: 1
   serializedVersion: 4
-  m_Animation: {fileID: 7400000, guid: 73d97f30b60152b4da88b44652af41ac, type: 3}
+  m_Animation: {fileID: 7330622477707321032, guid: 73d97f30b60152b4da88b44652af41ac, type: 3}
   m_Animations:
-  - {fileID: 7400000, guid: 73d97f30b60152b4da88b44652af41ac, type: 3}
-  - {fileID: 7400002, guid: 73d97f30b60152b4da88b44652af41ac, type: 3}
+  - {fileID: 7330622477707321032, guid: 73d97f30b60152b4da88b44652af41ac, type: 3}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_UpdateMode: 0
   m_CullingType: 1
+--- !u!114 &-6406204757365159953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970183940235022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0950a070e8184502ab2d11791462f55d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BubbleController
+  _minDelay: 30
+  _maxDelay: 50
+  _bubbles: {fileID: 4406016380366405394}
+  _bubbleSoundEvent:
+    Guid:
+      Data1: -911795788
+      Data2: 1228974653
+      Data3: -37025863
+      Data4: 1658171991
+    Path: event:/Bubble
+--- !u!1001 &9202114964352048292
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4352906953820976}
+    m_Modifications:
+    - target: {fileID: 2420097642138402507, guid: d93fd70c65a4f4c50a57a76fc35ac4ac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.014
+      objectReference: {fileID: 0}
+    - target: {fileID: 2420097642138402507, guid: d93fd70c65a4f4c50a57a76fc35ac4ac, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2420097642138402507, guid: d93fd70c65a4f4c50a57a76fc35ac4ac, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.439
+      objectReference: {fileID: 0}
+    - target: {fileID: 2420097642138402507, guid: d93fd70c65a4f4c50a57a76fc35ac4ac, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2420097642138402507, guid: d93fd70c65a4f4c50a57a76fc35ac4ac, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2420097642138402507, guid: d93fd70c65a4f4c50a57a76fc35ac4ac, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2420097642138402507, guid: d93fd70c65a4f4c50a57a76fc35ac4ac, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2420097642138402507, guid: d93fd70c65a4f4c50a57a76fc35ac4ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 2420097642138402507, guid: d93fd70c65a4f4c50a57a76fc35ac4ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2420097642138402507, guid: d93fd70c65a4f4c50a57a76fc35ac4ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5248517549153536087, guid: d93fd70c65a4f4c50a57a76fc35ac4ac, type: 3}
+      propertyPath: m_Name
+      value: Bubbles
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d93fd70c65a4f4c50a57a76fc35ac4ac, type: 3}
+--- !u!198 &4406016380366405394 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4796661549316449206, guid: d93fd70c65a4f4c50a57a76fc35ac4ac, type: 3}
+  m_PrefabInstance: {fileID: 9202114964352048292}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6782864372221469295 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2420097642138402507, guid: d93fd70c65a4f4c50a57a76fc35ac4ac, type: 3}
+  m_PrefabInstance: {fileID: 9202114964352048292}
+  m_PrefabAsset: {fileID: 0}
