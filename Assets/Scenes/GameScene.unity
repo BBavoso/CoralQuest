@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0.09411765, g: 0.5686275, b: 0.8627451, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.174
+  m_FogDensity: 0.472
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -66108,7 +66108,7 @@ MonoBehaviour:
   m_Duration: 100
   m_MaxSpeed: 0.34463063
   m_EasingMode: 0
-  m_AlignmentMode: 1
+  m_AlignmentMode: 0
   m_ObjectForwardAxis: 2
   m_ObjectUpAxis: 1
   m_StartOffset: 0
