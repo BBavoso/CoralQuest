@@ -43,6 +43,16 @@ extern void U3CPlayParticlesRandomlyU3Ed__5_MoveNext_m5857714824EB032C29B603E4DC
 extern void U3CPlayParticlesRandomlyU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m84BCB4D7BB52A0A224BF5E01008F2070A4779595 (void);
 extern void U3CPlayParticlesRandomlyU3Ed__5_System_Collections_IEnumerator_Reset_m94035691098F69663B63C7B5D41F5A609BDEB096 (void);
 extern void U3CPlayParticlesRandomlyU3Ed__5_System_Collections_IEnumerator_get_Current_m0AEDFCB875CB118AE2C7F99472DC90BCF5EAC3E4 (void);
+extern void CamAnimate_Start_m9FB68C36EC4E52067E42446BCF59771DA8082503 (void);
+extern void CamAnimate_OnDestroy_mA9BCD72CF5F7C768FE59B08865B9BB57BA74766E (void);
+extern void CamAnimate_OnGrabbed_m5C427AFD040E7E611F9C0E5B2E1A88B96CADC366 (void);
+extern void CamAnimate_OnReleased_mCFFC29DC5BBD2AF404A1F8C9932DF44668928FCB (void);
+extern void CamAnimate_Update_m820741C2D861E4983A76652CD741B7DDBF74AA45 (void);
+extern void CamAnimate__ctor_m871504EA615399A7E7CD1BBF0084FE0EAB8AA75B (void);
+extern void VRButtonTrigger_Awake_mB3DC48F6FE9E6A285E7F00726DE058C8EEC05E90 (void);
+extern void VRButtonTrigger_OnDestroy_mC42499E4EABBA79B59B83508E782BCA34C2B9748 (void);
+extern void VRButtonTrigger_OnPressed_m1DE143DB8BBE7A32DABA20844CAA03C00D8E15D8 (void);
+extern void VRButtonTrigger__ctor_m9DE8815070FFEA9676CA4B354AD0B48647574CFD (void);
 extern void CausticsLightAnimatorResources_Start_m946B0E99B2AD8342D296C585AC6A46A45DC3122A (void);
 extern void CausticsLightAnimatorResources_Update_m426724716B5C3F1982899854BF6B380878FDF5A9 (void);
 extern void CausticsLightAnimatorResources__ctor_m2761BCD3A10DF717F2ADAE2AEA6D59C57BF3F70F (void);
@@ -53,7 +63,7 @@ extern void Water_Settings__ctor_mB62CAD71CAF3D153627B41D6F1FADAD710CAD691 (void
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
 extern void PrefabPainterSceneSettings__ctor_m4B74469B752358D48AECE9BA906FA0ED2E5DF7CE (void);
-static Il2CppMethodPointer s_methodPointers[46] = 
+static Il2CppMethodPointer s_methodPointers[56] = 
 {
 	RotateGameObject_Start_m99C38F8FF408EA5DC5227D78964106594FD25957,
 	RotateGameObject_FixedUpdate_m3A2ECB33A93F1EAE8B3B59BF8D4C378F54D06BA8,
@@ -91,6 +101,16 @@ static Il2CppMethodPointer s_methodPointers[46] =
 	U3CPlayParticlesRandomlyU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m84BCB4D7BB52A0A224BF5E01008F2070A4779595,
 	U3CPlayParticlesRandomlyU3Ed__5_System_Collections_IEnumerator_Reset_m94035691098F69663B63C7B5D41F5A609BDEB096,
 	U3CPlayParticlesRandomlyU3Ed__5_System_Collections_IEnumerator_get_Current_m0AEDFCB875CB118AE2C7F99472DC90BCF5EAC3E4,
+	CamAnimate_Start_m9FB68C36EC4E52067E42446BCF59771DA8082503,
+	CamAnimate_OnDestroy_mA9BCD72CF5F7C768FE59B08865B9BB57BA74766E,
+	CamAnimate_OnGrabbed_m5C427AFD040E7E611F9C0E5B2E1A88B96CADC366,
+	CamAnimate_OnReleased_mCFFC29DC5BBD2AF404A1F8C9932DF44668928FCB,
+	CamAnimate_Update_m820741C2D861E4983A76652CD741B7DDBF74AA45,
+	CamAnimate__ctor_m871504EA615399A7E7CD1BBF0084FE0EAB8AA75B,
+	VRButtonTrigger_Awake_mB3DC48F6FE9E6A285E7F00726DE058C8EEC05E90,
+	VRButtonTrigger_OnDestroy_mC42499E4EABBA79B59B83508E782BCA34C2B9748,
+	VRButtonTrigger_OnPressed_m1DE143DB8BBE7A32DABA20844CAA03C00D8E15D8,
+	VRButtonTrigger__ctor_m9DE8815070FFEA9676CA4B354AD0B48647574CFD,
 	CausticsLightAnimatorResources_Start_m946B0E99B2AD8342D296C585AC6A46A45DC3122A,
 	CausticsLightAnimatorResources_Update_m426724716B5C3F1982899854BF6B380878FDF5A9,
 	CausticsLightAnimatorResources__ctor_m2761BCD3A10DF717F2ADAE2AEA6D59C57BF3F70F,
@@ -102,60 +122,70 @@ static Il2CppMethodPointer s_methodPointers[46] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 	PrefabPainterSceneSettings__ctor_m4B74469B752358D48AECE9BA906FA0ED2E5DF7CE,
 };
-static const int32_t s_InvokerIndices[46] = 
+static const int32_t s_InvokerIndices[56] = 
 {
-	13754,
-	13754,
-	13754,
-	13754,
-	13754,
-	13754,
-	7453,
-	13754,
-	13754,
-	13754,
-	5370,
-	13754,
-	13754,
-	13754,
-	5370,
-	5332,
-	22510,
-	1539,
-	19983,
-	19983,
-	13754,
-	13754,
-	13754,
-	13754,
-	13754,
-	13754,
-	13754,
-	13754,
-	13563,
-	13754,
-	10437,
-	13754,
-	13378,
-	13563,
-	13754,
-	13563,
-	13754,
-	13754,
-	13754,
-	13754,
-	13754,
-	13754,
-	13754,
-	23981,
-	13754,
-	13754,
+	14778,
+	14778,
+	14778,
+	14778,
+	14778,
+	14778,
+	8062,
+	14778,
+	14778,
+	14778,
+	5840,
+	14778,
+	14778,
+	14778,
+	5840,
+	5801,
+	23903,
+	1709,
+	21330,
+	21330,
+	14778,
+	14778,
+	14778,
+	14778,
+	14778,
+	14778,
+	14778,
+	14778,
+	14573,
+	14778,
+	11242,
+	14778,
+	14368,
+	14573,
+	14778,
+	14573,
+	14778,
+	14778,
+	11305,
+	11305,
+	14778,
+	14778,
+	14778,
+	14778,
+	11305,
+	14778,
+	14778,
+	14778,
+	14778,
+	14778,
+	14778,
+	14778,
+	14778,
+	25386,
+	14778,
+	14778,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	46,
+	56,
 	s_methodPointers,
 	0,
 	NULL,

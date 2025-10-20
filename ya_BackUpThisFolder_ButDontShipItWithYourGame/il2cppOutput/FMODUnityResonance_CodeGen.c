@@ -44,22 +44,22 @@ static Il2CppMethodPointer s_methodPointers[16] =
 };
 static const int32_t s_InvokerIndices[16] = 
 {
-	23983,
-	13754,
-	20174,
-	22025,
-	23825,
-	22510,
-	19966,
-	19332,
-	23476,
-	23825,
-	23955,
-	13754,
-	13754,
-	13754,
-	13754,
-	13754,
+	25389,
+	14778,
+	21522,
+	23390,
+	25224,
+	23903,
+	21313,
+	20670,
+	24872,
+	25224,
+	25360,
+	14778,
+	14778,
+	14778,
+	14778,
+	14778,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_FMODUnityResonance_CodeGenModule;
 const Il2CppCodeGenModule g_FMODUnityResonance_CodeGenModule = 
